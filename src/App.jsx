@@ -1,9 +1,20 @@
 import { useState } from "react";
 import "./App.css";
-import logo from '/src/assets/logogotas_final.png'
-import perfil from '/src/assets/isabela2.jpg'
 import { FaInstagram, FaFacebook, FaYoutube, FaWhatsapp, FaMailchimp, FaMailBulk } from "react-icons/fa";
 import { useRef } from "react";
+import logo from '/src/assets/logogotas_final.png'
+import perfil from '/src/assets/isabela2.jpg'
+import bach from '/src/assets/bach.jpg'
+import bach2 from '/src/assets/bach2.png'
+import abertura from '/src/assets/abertura.png'
+import conste from '/src/assets/const.png'
+import pono from '/src/assets/pono.png'
+import reiki from '/src/assets/reiki.png'
+import mandala from '/src/assets/mandalas.png'
+import access from '/src/assets/access.png'
+import face from '/src/assets/face.png'
+import radiestesia from '/src/assets/radiestesia.png'
+import mesa from '/src/assets/mesa.png'
 
 function App() {
   const tabs = [0,1,2,3,4,5,6,7,8,9,10];
@@ -128,7 +139,7 @@ Elas oferecem abordagens complementares que trazem mais equilíbrio, bem-estar, 
  Ao invés de focar apenas nos sintomas, as Terapias Integrativas auxiliam a  encontrar e cuidar da causa raiz do sintoma ou do desafio para  tratar a pessoa como um todo, buscando o equilíbrio e a harmonia.
 Essas práticas podem ser utilizadas em conjunto com a medicina convencional para otimizar os resultados e melhorar a qualidade de vida. 
 </p>
-          <img src="/src/assets/abertura.png" className="perfil"></img>
+          <img src={abertura} className="perfil"></img>
 <h2><br/>Todas as práticas integrativas que ofereço estão nesta página! Sinta-se à vontade para explorar, aprender e entrar em contato para agendar uma sessão!</h2>
           <p><br/>!! Não substituem tratamentos médicos, contudo,  complementam, apoiam e otimizam processos de melhora e transformação !!</p>
           </div>
@@ -160,10 +171,10 @@ Sou praticante e facilitadora de Práticas Integrativas. </p>
         {tabAtiva === 2 && (
           <div>
             <h2>Sobre os Florais de Bach...</h2>
-            <img src="/src/assets/bach.jpg" className="perfil"></img>
+            <img src={bach} className="perfil"></img>
             <p><br/>Florais de Bach são essências extraídas de flores, que ajudam a equilibrar as emoções e a lidar com diferentes estados mentais e emocionais. São 38 florais diferentes, cada um associado a uma emoção específica. 
 Ao relatar a situação que está incomodando, o terapeuta floral indicará as essências ideais para tratar o cliente.</p>
-            <img src="/src/assets/bach2.png" className="perfil"></img>
+            <img src={bach2} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 3 && (
@@ -171,7 +182,7 @@ Ao relatar a situação que está incomodando, o terapeuta floral indicará as e
             <h2>Sobre Constelação Familiar...</h2>
             <p><br/>A constelação familiar é uma abordagem terapêutica que busca identificar e resolver padrões de comportamento e dinâmicas familiares disfuncionais, que podem estar causando sofrimento no presente.  Visa trazer à tona as dinâmicas ocultas que influenciam nossos relacionamentos e a nossa vida. 
 A partir do momento que a raiz desta dinâmica funcional vem para a consciência, é possível ressignificar, mudar comportamentos e encontrar uma solução para o sistema familiar e para a pessoa que busca auxílio.</p>
-            <img src="/src/assets/const.png" className="perfil"></img>
+            <img src={conste} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 4 && (
@@ -179,7 +190,7 @@ A partir do momento que a raiz desta dinâmica funcional vem para a consciência
             <h2>Sobre o Ho'oponopono...</h2>
             <p><br/>O Ho'oponopono é uma técnica havaiana de cura e reconciliação, baseada na repetição de frases como "Sinto muito", "Me perdoe", "Eu te amo" e "Sou grato".  Ajuda a limpar memórias e crenças limitantes, promovendo o perdão, a aceitação e a paz interior.
 Além das frases que podem ser utilizadas repetidas vezes, como um mantra, ou repetidas pelo número de vezes que o seu coração desejar, o  Ho’oponopono tem outras ferramentas que auxiliam as pessoas a encontrar a paz.</p>
-            <img src="/src/assets/pono.png" className="perfil"></img>
+            <img src={pono} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 5 && (
@@ -187,42 +198,42 @@ Além das frases que podem ser utilizadas repetidas vezes, como um mantra, ou re
             <h2>Sobre as Mandalas...</h2>
             <p><br/>Mandalas são desenhos geométricos que possuem um significado simbólico e podem ser utilizados para meditação, autoconhecimento e cura.
 A criação ou contemplação de mandalas pode promover o relaxamento, a concentração e a expressão criativa.</p>
-            <img src="/src/assets/mandalas.png" className="perfil"></img>
+            <img src={mandala} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 6 && (
           <div>
             <h2>Sobre o Reiki...</h2>
             <p><br/>O Reiki é uma terapia de imposição de mãos que canaliza energia universal para promover o equilíbrio energético do corpo, aliviando o estresse, a dor e outros sintomas. O Reiki pode ser utilizado para complementar outros tratamentos médicos e terapêuticos.</p>
-            <img src="/src/assets/reiki.png" className="perfil"></img>
+            <img src={reiki} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 7 && (
           <div>
             <h2>Sobre as Barras de Access...</h2>
             <p><br/>As Barras de Access são uma técnica que envolve tocar suavemente em 32 pontos na cabeça, que correspondem a diferentes áreas da vida, como dinheiro, relacionamentos, saúde e criatividade.  O objetivo é liberar padrões de pensamento, crenças e emoções limitantes.</p>
-            <img src="/src/assets/access.png" className="perfil"></img>
+            <img src={access} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 8 && (
           <div>
             <h2>Sobre o FaceLift Energético...</h2>
             <p><br/>O FaceLift Energético é um processo de imposição de mãos que visa rejuvenescer e revitalizar o rosto e o corpo, sem cirurgia ou procedimentos invasivos.  Atua liberando tensões e bloqueios energéticos, promovendo a renovação celular e a melhora da aparência.</p>
-            <img src="/src/assets/face.png" className="perfil"></img>
+            <img src={face} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 9 && (
           <div>
             <h2>Sobre Radiestesia Terapêutica...</h2>
             <p><br/>A radiestesia terapêutica é uma ténica que utiliza instrumentos como o pêndulo e os gráficos para detectar desequilíbrios energéticos no corpo e no ambiente, identificando as causas e oferecendo as soluções para os desequilíbrios. Pode ser utilizada para identificar a causa  e tratar diversos problemas de pessoas, animais e ambientes.</p>
-            <img src="/src/assets/radiestesia.png" className="perfil"></img>
+            <img src={radiestesia} className="perfil"></img>
           </div>
           )}
         {tabAtiva === 10 && (
           <div>
             <h2>Sobre as Mesas Radiônicas...</h2>
             <p><br/>Uma Mesa Radiônica combina radiestesia, radiônica e outras técnicas para promover a harmonia e o equilíbrio em diferentes níveis (físico, mental, emocional e espiritual). A Mesa Radiônica pode ser utilizada para limpar energias negativas, desbloquear potenciais e manifestar objetivos. Na mesa “A Origem da Vida” vamos cuidar das memórias de gestação e nascimento.</p>
-            <img src="/src/assets/mesa.png" className="perfil"></img>
+            <img src={mesa} className="perfil"></img>
           </div>
           )}
       </div>
