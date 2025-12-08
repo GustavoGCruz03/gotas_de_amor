@@ -241,15 +241,30 @@ html, body, #root {
     width: 80px;
   }
 
-  /* Remove os textos em mobile */
-  .header_right span {
+  /* Oculta só os textos dos links sociais */
+  .header_right a span {
     display: none;
   }
 
-  /* Centraliza os ícones verticalmente */
+  /* Ícones lado a lado no topo da área direita */
   .header_right {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  /* Ícones sociais: fica em linha */
+  .header_right a {
     flex-direction: row;
-    gap: 10px;
+  }
+
+  /* Email fica abaixo sozinho */
+  .header_right p {
+    margin-top: 5px;
+    font-size: 14px;
+    display: flex;
+    align-items: center;
+    gap: 6px; /* espaço entre ícone e texto */
+    text-align: center;
   }
 
   .icon {
