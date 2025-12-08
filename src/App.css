@@ -185,17 +185,6 @@ html, body, #root {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
 /* Estilos do rodapé do desenvolvedor*/
 .footer {
   width: 100%;
@@ -226,4 +215,64 @@ html, body, #root {
   margin-top: 10px;
   font-size: 12px;
   opacity: 0.7;
+}
+
+
+
+
+/* Ajustes para mobile */
+/* Para telas menores que 768px (celulares) */
+@media (max-width: 768px) {
+  .header {
+    grid-template-columns: 1fr auto 1fr;
+    padding: 10px;
+  }
+
+  .header_left h2 {
+    font-size: 16px;
+  }
+
+  .header_left p {
+    font-size: 12px;
+  }
+
+  /* Reduz um pouco o tamanho do logo */
+  .logo {
+    width: 80px;
+  }
+
+  /* Remove os textos em mobile */
+  .header_right span {
+    display: none;
+  }
+
+  /* Centraliza os ícones verticalmente */
+  .header_right {
+    flex-direction: row;
+    gap: 10px;
+  }
+
+  .icon {
+    font-size: 22px;
+  }
+}
+
+/* Para celulares bem pequenos (até 500px) */
+@media (max-width: 500px) {
+  .header {
+    grid-template-columns: auto auto auto;
+  }
+
+  /* Ajusta ainda mais o nome */
+  .header_left h2 {
+    font-size: 14px;
+  }
+
+  .header_left p {
+    display: none; /* se começar a apertar demais, oculta o subtítulo */
+  }
+
+  .logo_text {
+    font-size: 18px;
+  }
 }
