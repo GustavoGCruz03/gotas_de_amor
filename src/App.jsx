@@ -48,7 +48,7 @@ function App() {
           <a href="https://www.facebook.com/igomesdacruz"><FaFacebook className="icon" /><span>Facebook</span></a>
           <a href="https://www.youtube.com/@isabelagomes-gotasdeamor-f6218"><FaYoutube className="icon" /><span>YouTube</span></a>
           <a href="https://wa.me/qr/MADETGSB22NPC1"><FaWhatsapp className="icon" /><span>WhatsApp</span></a>
-          <a href=""><FaMailBulk className="icon" /><span>iagomescruz2@gmail.com</span></a>
+          <a href=""><FaMailBulk className="icon" /><p>iagomescruz2@gmail.com</p></a>
         </div>
       </header>
 
